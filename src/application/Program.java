@@ -17,7 +17,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.println("Entre com os dados do contrato");
+        System.out.println("Entre com os dados do contrato:");
         System.out.print("Numero: ");
         int number = sc.nextInt();
         sc.nextLine();
@@ -37,7 +37,7 @@ public class Program {
 
         contractService.processContract(obj, n);
 
-        System.out.println("PARCELAS");
+        System.out.println("PARCELAS:");
 
         for(Installment installment : obj.getInstallment()) {
             System.out.println(installment);
